@@ -1,0 +1,477 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+h1, h2, h3, h4, p{
+	text-align: center;
+}
+
+.header-title{
+	/* 背景 */
+	background-image: url(../img/mainbg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 400px;
+
+
+	/* テキスト */
+	color: #ffffff;
+
+	display: flex;
+	justify-content: center;
+  align-items: center;
+}
+
+.header-title h1 {
+	font-size: 48px;
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.header-title h2 {
+	font-size: 36px;
+	font-weight: normal;
+}
+
+.header-nav{
+	font-size: 21px;
+	height: 80px;
+	border:1px solid #efefef;
+	padding: 0% 5%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-nav img{
+	height: 50px;
+	margin-right: 200px;
+}
+
+.header-nav a{
+	font-weight: normal;
+	color: #222222;
+	font-size: 21px;
+}
+
+/* main */
+
+.yellow-text{
+color: #ffd61a;
+}
+
+h4 {
+	font-weight: normal;
+}
+
+.section-header{
+padding: 64px 0px;
+}
+
+.section-header h3{
+margin-bottom: 24px;
+}
+
+.section-text {
+	margin-bottom: 80px;
+}
+
+.section-text p{
+	margin-bottom: 40px;
+}
+
+/* スライド写真 */
+.slide-contents {
+	/* object-fit: cover; */
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	flex-direction: row;
+}
+
+.slide-wrapper{
+	display: flex;
+	flex-direction: row;
+	animation: slide-flow 40s infinite linear 1s both;
+}
+
+.slide{
+	object-fit: cover;
+}
+
+@keyframes slide-flow {
+	0% {transform: translateX(0);}
+100% {transform: translateX(-100%);}
+}
+
+/* コース */
+.course-contents{
+	display: flex;
+	flex-direction: column;
+}
+
+.course-row{
+	display: flex;
+	flex-direction: row;
+}
+
+
+.course-img{
+	width: 50%;
+}
+
+.course-text{
+	width: 50%;
+	padding-left: 48px;
+	display: flex;
+	justify-content: left;
+  align-items: center;
+}
+
+/* .course-text-reverse{
+	width: 50%;
+	padding-right: 48px;
+	display: flex;
+	justify-content: right;
+  align-items: center;
+} */
+.course-text h3{
+	font-size: 24px;
+	color: #222222;
+	text-align: left;
+	margin-bottom: 40px;
+}
+
+.course-text p{
+	color: #222222;
+	text-align: left;
+}
+
+
+
+/* ニュース */
+.news-wrap{
+	display: flex;
+	justify-content: center;
+}
+
+.news-container{
+	width: 20%px;
+}
+
+.news-contaner img{
+	padding:0px 16px 32px 16px;
+	width: 100%;
+}
+
+.news-contaner p{
+	padding:0px 16px;
+	width: 100%;
+	text-align: left;
+}
+
+.news-container-day{
+	margin-bottom: 24px;
+}
+
+/* --- */
+
+button {
+	color: white;
+	font-size: 21px;
+	width: 300px;
+	height: 60px;
+	background-color: #ffd61a;
+}
+.btn-parent{
+	display: flex;
+	justify-content: center;
+}
+
+.btn-more{
+	margin-top: 56px;
+	margin-bottom: 48px;
+}
+
+/* map */
+.access-section{
+	background-color: #fafafa;
+}
+
+.map-parent{
+	display: flex;
+	justify-content: center;
+}
+
+iframe{
+  aspect-ratio: 16 / 9;
+  width: 60%;
+  height: 100%;
+}
+
+.text-parent{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 64px;
+	padding-bottom: 80px;
+}
+
+.text-parent p{
+	margin-bottom: 24px;
+	text-align: left;
+}
+
+.text-left{
+	padding-left: 48px;
+}
+
+
+
+
+
+/* フォームの入ったdivタグ */
+.contact{
+	width: 100%;
+	margin: 0 auto;
+	padding: 80px 0px 40px 0px;
+}
+
+/* テーブルの入ったフォーム */
+form{
+	display: flex;
+	justify-content: center;
+}
+
+/* テーブル */
+.contact-table{
+	display: flex;
+	justify-content: center;
+}
+
+/* テーブル左右共通項目 */
+.table-title,
+.table-value{
+	white-space: nowrap;	/* 改行させない */
+	font-size: 14px;
+	font-weight: normal;
+	/* border: 1px solid #222222; */
+}
+
+/* テーブルの左側 */
+.table-title{
+	padding-right: 120px;
+	vertical-align: top;	/* 文字上下 */
+	text-align: left;	/* 文字左右 */
+}
+
+/* テーブルの右側 */
+/* .table-value{
+} */
+
+.table-value span{
+	margin-left: 40px;
+}
+
+/* テキストのinput */
+.text-form{
+	border: 1px solid #bfbfbf;
+	width: 328px;
+	height: 36px;
+}
+
+/* 志望動機 */
+.motive-label{
+	display: block;
+	/* background-color: red; */
+	font-size: 14px;
+}
+
+/* チェックボックス  チェック前のデザイン */
+.motive-label input[type=checkbox]{
+	background-color:#f0ebe5;
+	width: 24px;
+	height: 24px;
+	/* position: relative; */
+	cursor: pointer;
+	/* margin-top: -1px; */
+	border-radius: 3px;
+	/* ベンダープレフィックス：cssリセット&各ブラウザに分からせる */
+	appearance: none;	/* ブラウザcss無視 */
+	-webkit-appearance: none;	/* google,サファリ対応 */
+	-moz-appearance: none;	/* Firefox/Mozilla対応 */
+	vertical-align: middle;
+	/* チェックマークの基準にする （現在のいち）*/
+	position: relative;
+}
+
+/* ✔︎のデザイン */
+.motive-label input[type=checkbox]:checked::before{
+	/* からのコンテンツ用意 */
+	content: "";
+	/* チェックマークの位置（absolute：親要素基準の絶対的な位置) */
+	position: absolute;
+	top:3px;
+	left:2px;
+	/* チェックマークを空箱(24*15)の左と下の辺を色付けしてかく */
+	width: 20px;
+	height: 12px;
+	border-left: 4px solid #1d1d1d;
+	border-bottom: 4px solid #1d1d1d;
+	/* それを回転させてチェックボックスっぽく */
+	transform: rotate(-50deg);
+
+}
+
+/* -----------各id----------- */
+#inp-name,
+#inp-kana,
+#inp-startup,
+#inp-changejob,
+#inp-skill{
+	margin-bottom: 24px;
+}
+
+#inp-mail{
+	/* padding-bottom: 40px; */
+	margin-bottom: 40px;
+}
+
+#inp-education{
+	margin-bottom: 32px;
+}
+
+#inp-txtarea{
+	width: 328px;
+	height: 108px;
+	border: 1px solid #bfbfbf;
+}
+
+
+/* ここからはボタン */
+#btn-send{
+	padding: 0;
+	margin: 0px 0px 160px 0px;
+	width: 298px;
+	height: 54px;
+	font-size: 18;
+}
+
+#btn-send:hover{
+	background: rgb(255, 47, 0);
+	border-radius: 100px;
+	color:#1d1d1d;
+	font-weight: bold;
+}
+
+/* アンカー */
+.anchor{
+	display: flex;
+	justify-content: end;
+}
+
+.anchor-btn{
+	background-color: #707070;
+	/* aタグのままだとサイズいじれないのでblockにする */
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin-right: 5%;
+}
+
+
+
+/* フッター */
+.footer{
+	background-color: #707070;
+	padding: 32px 0px;
+	font-size: 18px;
+	color: #efefef;
+}
+
+.last{
+	margin: 200px;
+	display: flex;
+	justify-content: center;
+}
+
+#last-btn{
+	background: red;
+	border-radius: 100px;
+}
+#last-btn:hover{
+	background: rgb(247, 244, 161);
+	border-radius: 100px;
+	color:#1d1d1d;
+	font-weight: bold;
+}
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+.game{
+	width: 100%;
+	height: 790px; /* 高さを50pxに指定 */
+
+	position: fixed; /* ウィンドウを基準に画面に固定 */
+	top: 0; /* 上下の固定位置を上から0pxにする */
+	left: 0; /* 左右の固定位置を左から0pxにする */
+	display: flex; /* 中の要素を横並びにする */
+	flex-direction: column;
+	align-items: center; /* 中の要素を上下中央に並べる */
+}
+
+.sketch{
+  position: relative;
+  width: 700px;
+  height: 700px;
+}
+
+
+.btn_parent{
+  position: relative;
+  width: 700px;
+  height: 90px;
+}
+
+#left{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 350px;
+  height: 90px;
+  background: #b51010;
+}
+
+#right{
+  position: absolute;
+  top: 0px;
+  left: 350px;
+  width: 350px;
+  height: 90px;
+  background: #4710b5;
+}

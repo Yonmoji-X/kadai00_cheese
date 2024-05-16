@@ -1,0 +1,46 @@
+html,
+body{
+  /* margin: 0;
+  padding: 0; */
+  /* ユーザーセレクトが入るとゲームやりずらいので外す */
+  /* 下のはサファリ用 */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+h1{
+  color: #b51010;
+}
+
+
+.sketch{
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+
+
+.btn_parent{
+  position: relative;
+  width: 300px;
+  height: 90px;
+}
+
+#left{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 150px;
+  height: 90px;
+  background: #b51010;
+}
+
+#right{
+  position: absolute;
+  top: 0px;
+  left: 150px;
+  width: 150px;
+  height: 90px;
+  background: #4710b5;
+}
